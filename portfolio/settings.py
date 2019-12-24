@@ -25,7 +25,7 @@ SECRET_KEY = 'k#kitibr7@()$m)5kz_c=j)akoj_*y2e3fb%%rxqojt9)jfipe'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'portfolio_app'
+    'portfolio.portfolio_app'
 ]
 
 MIDDLEWARE = [
@@ -48,9 +48,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
-ROOT_URLCONF = 'portfolio.urls'
+ROOT_URLCONF = 'portfolio.portfolio.urls'
 
 TEMPLATES = [
     {
@@ -125,3 +126,5 @@ STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'portfolio_app/static/')
 ]
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
