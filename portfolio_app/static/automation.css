@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Inria+Serif&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited{
+    text-decoration: none;
+    color: #555;
+}
+
+a:hover,
+a:active{
+    color: #07507f;
+}
+
+header{
+    background-image: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url(subpages/automation.jpg);
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+html{
+    background-color: #fdfeff;
+    color: #555;
+    font-family: 'Inria Serif';
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+.navbar a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: inherit;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #07507f;
+    /* border-bottom: 2px solid #07507f; */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fdfeff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #fdfeff;
+    color: #07507f;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.hero-image{
+    
+}
+
+.hero-image span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    font-size: 300%;    
+}
+
+.paragraph-writing p{
+    color: #07507f;
+}
+
+.row{
+    display: flex;
+}
+
+.left-side{
+    width: 33%;
+}
+
+.skill{
+    text-align: center;
+    height: 33.3%;
+    display: block;
+    vertical-align: middle;
+    padding: 24% 0;
+}
+
+.skill:hover{
+    box-shadow: 4px 4px 4px 4px #d6dfe9;
+}
+
+.right-side{
+    width: 66%;
+}
+

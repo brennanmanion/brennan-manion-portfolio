@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brennan Manion</title>
+    <!-- My own stylesheet-->
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <!-- Font Awesome Icons-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="row clearfix">
+                <img class="logo" src="{% static 'logo.jpg' %}">
+                <ul class="main-nav">
+                    <li>
+                        <a href="#skills-section">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#stack-section">Stacks</a>
+                    </li>
+                    <li>
+                        <a href="#education-section">Education</a>
+                    </li>
+                    <li>
+                        <a href="#">Resume</a>
+                    </li>
+                    <li>
+                        <a href="mailto:brennanman007@gmail.com?subject=Brennan Manion Website Portfolio">Contact</a>
+                    </li>                                                                                
+                </ul>
+            </div>
+        </nav>
+        <div class="hero-text-box">
+            <h2>
+                <span class="hero-header-1">Qualified</span>
+                <br/>
+                <span class="hero-header-2">Professional</span>
+            </h2>
+            <div class="hero-image-buttons">
+                <a class="btn btn-full" href="#">Resume</a>
+                <a class="btn btn-ghost" href="mailto:brennanman007@gmail.com?subject=Brennan Manion Website Portfolio">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <a name="skills-section"></a>
+    <section class="skills-section">
+        <h2>Skills</h2>
+
+        <div class="skills">
+            <a href="/data-science/">
+                <div class="skill">
+                    <ion-icon name="analytics"></ion-icon>
+                    <h3>Data Science</h3>                
+                    <!-- <p>Deep Learning & Machine Learning <br/> Regression &amp; Classification For Business Solutions</p> -->
+                    <p>Deep Learning &amp; Machine Learning</p>
+                </div>
+            </a>
+
+            <a href="/full-stack/">
+                <div class="skill">
+                    <ion-icon name="code"></ion-icon>
+                    <h3>Full Stack</h3>                
+                    <!-- <p>Python backend with JavaScript, HTML5, &amp; CSS3 frontend to create web applications</p> -->
+                    <p>Python, JavaScript, HTML5 &amp; CSS3</p>
+                </div>  
+            </a>
+
+            <a href="/automation/">
+                <div class="skill">
+                    <i class="fas fa-robot"></i>
+                    <h3>Automation</h3>                
+                    <p>Analytics, Reporting &amp; Monitoring</p>
+                </div>   
+            </a>
+    
+        </div>
+    </section>
+
+    <a name="hobbies-section"></a>
+    <section class="hobbies-section">
+        <h2>Hobbies</h2>
+        <ul class="hobbies clearfix">
+
+            <a href="/trading/">
+                <li class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-trading.jpg' %}" alt="hobbies - trading">
+                        <span>Trading</span>
+                    </figure>
+                </li>
+            </a>
+
+            <a href="/reading/">
+                <li class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-reading.jpg' %}" alt="hobbies - reading">
+                        <span>Reading</span>
+                    </figure>
+                </li>  
+            </a>
+
+            <a href="/entrepreneurship/">
+                <li class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-entrepreneur.jpg' %}" alt="hobbies - entrepreneur">
+                        <span>Entrepreneurship</span>
+                    </figure>
+                </li>
+            </a>
+            
+            <a href="/tutorials/">
+                <li class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-tutorials.jpg' %}" alt="hobbies - tutorials">
+                        <span>Tutorials</span>
+                    </figure>
+                </li>   
+            </a>
+
+        </ul>
+
+        <ul class="hobbies clearfix">
+            
+            <a href="/weightlifting/">
+                <li class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-weightlifting.jpg' %}" alt="hobbies - weightlifting">
+                        <span>Weightlifting</span>
+                    </figure>
+                </li>
+            </a>
+
+            <a href="/snowboarding/">
+                <li class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-snowboarding.jpg' %}" alt="hobbies - snowboarding">
+                        <span>Snowboarding</span>
+                    </figure>
+                </li> 
+            </a>
+
+            <a href="/music/">
+                <li class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-edm.jpg' %}" alt="hobbies - EDM">
+                        <span>Music</span>
+                    </figure>
+                </li>
+            </a>
+            
+            <a href="/longboarding/">
+                <li class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-longboarding.jpg' %}" alt="hobbies - longboarding">
+                        <span>Longboarding</span>
+                    </figure>
+                </li>   
+            </a>
+
+        </ul>
+    </section>
+
+    <a name="education-section"></a>
+    <section class="education-section">
+        <h2>Education</h2>
+        <div class="educations">                        
+            <div class="education mines clearfix">
+                <h3>Colorado School of Mines</h3>
+                <img src="{% static 'colorado-school-of-mines.jpg' %}">
+                <p>CSM Description</p>
+            </div>
+
+            <div class="education adelaide clearfix">
+                <h3>University of Adelaide</h3>
+                <img src="{% static 'university-of-adelaide.jpg' %}">
+                <p>U of A Description</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- <section class="experience-section">
+        <h2>Experience</h2>
+        <div class="experiences">
+            
+            <div class="experience">
+                Experience 1
+            </div>
+
+            <div class="experience">
+                Experience 2
+            </div>
+        </div>
+    </section> -->
+
+    <a name="stack-section"></a>
+    <section class="stack-section">
+        <h2>Stacks</h2>
+        <div class="stacks">
+            
+            <a href="#">
+                <div class="stack">
+                    <h3>Django</h3>
+                    <i class="fab fa-python"></i>
+                    <p>Description</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="stack">
+                    <h3>React</h3>
+                    <i class="fab fa-react"></i>
+                    <p>Description</p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- <section class="portfolio-section">
+        <h2>Portfolio</h2>
+        <div class="portfolios">
+            
+            <div class="portfolio">
+                Portfolio 1
+            </div>
+
+            <div class="portfolio">
+                Portfolio 2
+            </div>            
+        </div>
+    </section> -->
+
+    <section class="about-section">
+        <h2>About Me</h2>
+        <div class="about">
+            <p>
+                About Me
+            </p>
+        </div>
+    </section>
+
+    <!-- IonIcons script-->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

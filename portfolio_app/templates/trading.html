@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- My CSS Sheet-->
+    {% load static %}
+    <link type="text/css" rel="stylesheet" href="{% static 'trading.css' %}">
+
+    <!-- FontAwesome-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trading</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+
+            <div class="navbar">
+                    <a href="mailto:brennanman007@gmail.com?subject=Brennan Manion Website Portfolio">Contact</a>
+                <a href="../">Home</a>                
+                <div class="dropdown">
+                    <button class="dropbtn">Hobbies 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/trading/">Trading</a>
+                        <a href="/reading/">Reading</a>
+                        <a href="/entrepreneurship/">Entrepreneurship</a>
+                        <a href="/tutorials/">Tutorials</a>
+                        <a href="/weightlifting/">Weightlifting</a>
+                        <a href="/snowboarding/">Snowboarding</a>
+                        <a href="/music/">Music</a>
+                        <a href="/longboarding/">Longboarding</a>
+                    </div>
+                </div>                 
+            </div>
+
+        </nav>
+        <div class="hero-image">
+            <span class="hero-header1">Trading</span>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="left-side">   
+
+            <a href="/trading/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-trading.jpg' %}" alt="hobbies - trading">
+                        <span>Trading</span>
+                    </figure>
+                </div> 
+            </a>
+
+            <a href="/reading/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-reading.jpg' %}" alt="hobbies - reading">
+                        <span>Reading</span>
+                    </figure>
+                </div> 
+            </a>
+
+            <a href="/entrepreneurship/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-entrepreneur.jpg' %}" alt="hobbies - entrepreneur">
+                        <span>Entrepreneurship</span>
+                    </figure>
+                </div>  
+            </a>
+            
+
+            <a href="/tutorials/">
+                <div class="hobby">
+                        <figure class="hobby-photo">
+                            <img src="{% static 'hobby-tutorials.jpg' %}" alt="hobbies - tutorials">
+                            <span>Tutorials</span>
+                        </figure>
+                </div>  
+            </a>  
+
+        </div>
+
+        <div class="middle">
+            <section class="paragraph-writing">
+                <p>
+                        I swing trade stock options. In order to take a trade, I must first have an understanding of how the broad market is performing, how each sector is performing, and how stocks in a sector are performing. Then, I look for a burden of proof to take a trade. I execute the trade, set a stop loss and take profit, and follow my trading plan strictly. 
+                        <br/><br/>
+                        Beginning each morning, I take a look at market breadth, fear levels, the put to call ratio, support and resistance levels of the SPY, the IWM, and the TLT, and which sectors are being accumulated. I then look at the performance of each of the 10 major sectors to understand which sectors are performing best. I then identify which are the top performing stocks in that sector. Following these strategies will give me a direction of where the overall market is going and which sectors will lead or lag the market movement. After understanding the forest, I then take a look at the trees.
+                        <br/><br/>
+                        After having a broad market understanding, I can begin charting the best performing stocks in the best performing sector. I chart the stock to find congestion patterns, support and resistance levels, symmetry in price swings, volume patterns, and momentum and price action divergence. In order to take a trade, I must have at least 3 of these factors in confluence with market and sector bullishness. The best trade setups I have are stocks that are top performers in a strong market and sector environment, that have pulled back to a support level with a distance similar to historical price action swings, with divergence between price action and the relative strength index, and volume to confirm the trend. I will then set my take profit and stop loss levels, and long a call that has liquidity, a tight spread, and a high delta with 10 weeks minimum to expiration. 
+                        <br/><br/>
+                        After finding a good trade set up, I set notifications on my thinkorswim app on my phone to identify when the mark is at my take profit or stop loss levels. I will additionally make note of when I placed the trade. If the stock moves to my desired profit target, I will liquidate my option contract. If the stock moves below my stop loss level, I will liquidate the option contract. If 15 trading sessions have expired and no movement has occurred in the stock, I will liquidate my contract. Finally, if a volatile move occurs (upside or downside) I will liquidate my contract. I follow these rules with great discipline. 
+                        <br/><br/>
+                        I will only take a trade when the odds are in my favor. I will not take a position unless a great set up is presented to me, and the market pulls back to the level I consider fair value. I follow my stop loss and take profit levels strictly, and will only move my stop loss level up when a new high is made. I give myself exposure to long and short positions to create natural hedges for my portfolio. I follow strict position sizing rules, and seek to make steady gains through trading over my lifetime.                        
+                </p>
+            </section>               
+        </div>
+
+        <div class="right-side">
+
+            <a href="/weightlifting/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-weightlifting.jpg' %}" alt="hobbies - weightlifting">
+                        <span>Weightlifting</span>
+                    </figure>
+                </div> 
+            </a>
+    
+            <a href="/snowboarding/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-snowboarding.jpg' %}" alt="hobbies - snowboarding">
+                        <span>Snowboarding</span>
+                    </figure>
+                </div> 
+            </a>
+    
+            <a href="/music/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-edm.jpg' %}" alt="hobbies - EDM">
+                        <span>Music</span>
+                    </figure>
+                </div>  
+            </a>
+                
+    
+            <a href="/longboarding/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-longboarding.jpg' %}" alt="hobbies - longboarding">
+                        <span>Longboarding</span>
+                    </figure>
+                </div>  
+            </a> 
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

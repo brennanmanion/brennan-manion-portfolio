@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- My CSS Sheet-->
+    {% load static %}
+    <link type="text/css" rel="stylesheet" href="{% static 'music.css' %}">
+
+    <!-- FontAwesome-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+
+            <div class="navbar">
+                    <a href="mailto:brennanman007@gmail.com?subject=Brennan Manion Website Portfolio">Contact</a>
+                <a href="../">Home</a>                
+                <div class="dropdown">
+                    <button class="dropbtn">Hobbies 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/trading/">Trading</a>
+                        <a href="/reading/">Reading</a>
+                        <a href="/entrepreneurship/">Entrepreneurship</a>
+                        <a href="/tutorials/">Tutorials</a>
+                        <a href="/weightlifting/">Weightlifting</a>
+                        <a href="/snowboarding/">Snowboarding</a>
+                        <a href="/music/">Music</a>
+                        <a href="/longboarding/">Longboarding</a>
+                    </div>
+                </div>                 
+            </div>
+
+        </nav>
+        <div class="hero-image">
+            <span class="hero-header1">Music</span>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="left-side">   
+
+            <a href="/trading/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-trading.jpg' %}" alt="hobbies - trading">
+                        <span>Trading</span>
+                    </figure>
+                </div> 
+            </a>
+
+            <a href="/reading/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-reading.jpg' %}" alt="hobbies - reading">
+                        <span>Reading</span>
+                    </figure>
+                </div> 
+            </a>
+
+            <a href="/entrepreneurship/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-entrepreneur.jpg' %}" alt="hobbies - entrepreneur">
+                        <span>Entrepreneurship</span>
+                    </figure>
+                </div>  
+            </a>
+            
+
+            <a href="/tutorials/">
+                <div class="hobby">
+                        <figure class="hobby-photo">
+                            <img src="{% static 'hobby-tutorials.jpg' %}" alt="hobbies - tutorials">
+                            <span>Tutorials</span>
+                        </figure>
+                </div>  
+            </a>  
+
+        </div>
+
+        <div class="middle">
+            <section class="paragraph-writing">
+                <p>
+                        I am a basshead. My favorite music genres are trap and dubstep. I love listening to heavy electronic music between 140 and 150 beats per minute. Music is an extension of my personality, evokes vivid emotions, and inspires creativity.  
+                        <br/><br/>
+                        I used to produce music. I spent three years learning multiple DAWs to produce trap and dubstep. My dream was to create the heaviest and dirtiest drops that the EDM community would ever experience. I invested my time and money creating many synths that I would assemble into a drop. I later invested into a DJ deck and a PA system. I started my own radio show and ran that for over a year. I DJ’d at parties and published my music on Soundcloud. Music is an emotional stimulant and allows me to express myself in a discipline that I revere. 
+                        <br/><br/>
+                        Music has always had an attachment to my memory. When I hear a song from the past, I am filled with visual and emotional memories of my life during that period of time. Music that is new to me will cultivate passionate feelings of vigor or empathy, depending on the flavor of edm. Music has always brought out the most vivid emotions in me and I continue to use it as an emotional stimulant. 
+                        <br/><br/>
+                        When I listen to music, my mind is distracted from what traditionally consumes my thoughts and is redirected towards the music. When I can separate my mind from traditional thought, new ideas manifest. Listening to music inspires creativity in me, and brilliant ideas like new trading strategies and marketing techniques manifest when I listen to music.  Music liberates me from reality and puts me in a transcendence of thought and emotion. 
+                        <br/><br/>
+                        Music is one of my greatest passions. Music is expressive, creative, and liberating. Music has given me pride in my creativity. Music evokes memorable emotions and creates bookmarks in my life. It converts me from an intellectual into an artistic.                     
+                </p>
+            </section>               
+        </div>
+
+        <div class="right-side">
+
+            <a href="/weightlifting/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-weightlifting.jpg' %}" alt="hobbies - weightlifting">
+                        <span>Weightlifting</span>
+                    </figure>
+                </div> 
+            </a>
+    
+            <a href="/snowboarding/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-snowboarding.jpg' %}" alt="hobbies - snowboarding">
+                        <span>Snowboarding</span>
+                    </figure>
+                </div> 
+            </a>
+    
+            <a href="/music/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-edm.jpg' %}" alt="hobbies - EDM">
+                        <span>Music</span>
+                    </figure>
+                </div>  
+            </a>
+                
+    
+            <a href="/longboarding/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-longboarding.jpg' %}" alt="hobbies - longboarding">
+                        <span>Longboarding</span>
+                    </figure>
+                </div>  
+            </a> 
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

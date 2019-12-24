@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- My CSS Sheet-->
+    {% load static %}
+    <link type="text/css" rel="stylesheet" href="{% static 'automation.css' %}">
+
+    <!-- FontAwesome-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Automation</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+
+            <div class="navbar">
+                    <a href="mailto:brennanman007@gmail.com?subject=Brennan Manion Website Portfolio">Contact</a>
+                <a href="../">Home</a>                
+                <div class="dropdown">
+                    <button class="dropbtn">Skills 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/data-science/">Data Science</a>
+                        <a href="/full-stack/">Full Stack</a>
+                        <a href="/automation">Automation</a>
+                    </div>
+                </div>                 
+            </div>
+        </nav>
+        <div class="hero-image">
+            <span class="hero-header1">Automation</span>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="left-side">   
+
+            <a href="/data-science/">
+                <div class="skill">
+                    <ion-icon name="analytics"></ion-icon>
+                    <h3>Data Science</h3>                                    
+                    <p>Deep Learning &amp; Machine Learning</p>
+                </div> 
+            </a>
+
+            <a href="/full-stack/">
+                <div class="skill">
+                    <ion-icon name="code"></ion-icon>
+                    <h3>Full Stack</h3>                                    
+                    <p>Python, JavaScript, HTML5 &amp; CSS3</p>
+                </div> 
+            </a>
+
+            <a href="/automation/">
+                <div class="skill">
+                    <i class="fas fa-robot"></i>
+                    <h3>Automation</h3>                
+                    <p>Analytics, Reporting &amp; Monitoring</p>
+                </div>  
+            </a>
+            
+        </div>
+        <div class="right-side">
+            <section class="paragraph-writing">
+                <p>
+                        I was contracted to develop automated systems to build metric reports, collect data for analytics, and monitor for cataclysmic events. Each project gave me exposure to different operating systems, different Python libraries necessary to complete the task, and experience interpreting documentation for many different application programming interfaces. 
+                        <br/><br/>
+                        My most fulfilling automation project was to automate an agency’s metric reporting. The agency would send out a PDF of their client’s most important metrics for the platforms they marketed on each week. Traditionally, they would have an employee go through each platform and copy the relevant data. The employee would then draft a metric report with charts and tables. I automated this with Python. The fpdf and requests library were most notable in the project; requests were made to the different platform API’s, data was saved to a file, and a pdf was created with plots, figures, and images that were created from the data. This project added significant value to the company and reduced their expenses. 
+                        <br/><br/>
+                        Anything that measures will grow. Having a system in place that regularly collects quantitative data is indispensible to a company. I was employed to create a system that would collect data from website and save the data to a file daily. I built web drivers that required extensive logic to navigate a website through many obstacles and collect data in very untraditional methods. Web scraping was done with selenium in Python and data was appended to an ongoing csv file. 
+                        <br/><br/>
+                        It takes years for a brand to build trust and only seconds to diminish it. Having systems in place to identify catalysts that could hinder or benefit a brand’s reputation is crucial. I developed systems that would automatically collect comments on various social platforms, and using the natural language tool kit library in Python, was able to identify if a catalyst existed that could dramatically affect a company’s perception based on the polarity and magnitude of the comment. 
+                        <br/><br/>
+                        Automation is predicted to replace over 1.5 million jobs over the next decade. If automation is not in a business’s toolkit, their competitors who employ it will soon overtake them. Automation can be done on Linux, Windows, and Macintosh systems all with Python, and can be done with ease based on the vast number of Python libraries that create solutions to many problems.                     
+                </p>
+            </section>               
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

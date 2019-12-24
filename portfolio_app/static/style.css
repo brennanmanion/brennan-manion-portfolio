@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css?family=Inria+Serif&display=swap');
+/*------------------------------------------- */
+/* DEFAULT */
+/*------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fdfeff;
+    color: #555;
+    font-family: 'Inria Serif';
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+h2:hover{
+    color: #07507f;
+}
+
+/*------------------------------------------- */
+/* HEADER */
+/*------------------------------------------- */
+header{
+    background-image: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)), url(hero-image.jpg);
+    height: 100vh;    
+    background-size: cover;
+    /* background-position: right; */
+    background-attachment: fixed;    
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 20px;
+}
+.main-nav li{
+    display: inline-block;    
+}
+
+.main-nav li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.main-nav li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: border-bottom 0.1s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    background-color: #07507f
+}
+
+.hero-header-1{
+    position:relative;
+}
+
+.hero-header-1{
+    position:absolute;
+    left: 35%;
+    top: 35%;
+}
+
+.hero-header-2{
+    position:absolute;
+    left: 40%;
+    top: 40%;
+}
+
+.hero-image-buttons{
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+    top: 75%;    
+}
+
+.hero-image-buttons a{
+    color: #f7f9fb;
+    text-decoration: none;
+    padding: 10px;
+    transition: border-bottom 0.2s;
+    background-color: #07507f;
+    border: 1px solid #06466f;
+    border-radius: 200px;
+    transition: background-color 0.2s;
+}
+
+.hero-image-buttons a:active,
+.hero-image-buttons a:hover{
+    background-color: #06466f;
+}
+
+.hero-image-buttons a:last-of-type{
+    color: #07507f;
+    background-color: transparent;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.hero-image-buttons a:last-of-type:hover,
+.hero-image-buttons a:last-of-type:active{
+    color: #f7f9fb;
+    background-color: #07507f;
+}
+
+/*------------------------------------------- */
+/* SKILLS */
+/*------------------------------------------- */
+
+.skills-section h2{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.skills{
+    text-align: center;
+}
+
+.skills a{
+    text-decoration: none;
+    position: relative;
+}
+
+.skills a:link,
+.skills a:visited{
+    text-decoration: none;
+    border: none;
+    color: #555;
+    transition: color 0.2s;
+}
+
+.skills a:hover,
+.skills a:active{
+    /* position: absolute;
+    transform: translate(0,10px); */
+    color:#07507F;
+}
+
+.skill{
+    width: 32.26%;
+    display: inline-block;    
+    /* box-shadow: 2px 2px 2px 2px #d6dfe9; */
+    transition: box-shadow 0.2s;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.skill:hover{
+    box-shadow: 4px 4px 4px 4px #d6dfe9;
+}
+
+/*------------------------------------------- */
+/* HOBBIES */
+/*------------------------------------------- */
+
+.hobbies-section{
+    margin: 20px 0;
+}
+
+.hobbies-section h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hobbies{
+
+}
+
+.hobby{
+    display: block;
+    float: left;
+    width: 25%;    
+}
+
+.hobby-photo{
+    width: 100%;
+    margin: 0; 
+    overflow: hidden;
+    background-color: #000;    
+    text-align: center;  
+    position: relative;
+}
+
+.hobby-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.2s, opacity 0.2s; 
+}
+
+.hobby-photo img:hover{
+    transform: scale(1.03);    
+    opacity: 1;    
+}
+
+.hobby-photo img:hover + span{
+    color: #fff;
+	text-shadow:
+		-0.5px -0.5px 0 #000,
+		0.5px -0.5px 0 #000,
+		-0.5px 0.5px 0 #000,
+		0.5px 0.5px 0 #000;
+}
+
+.hobby-photo span{
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: color 0.2s;
+}
+
+/*------------------------------------------- */
+/* EDUCATION */
+/*------------------------------------------- */
+
+.education-section{
+    margin-top: 20px;
+}
+
+.education-section h2{
+    text-align: center;    
+}
+
+.education{
+}
+
+.educations{
+    position: relative;
+}
+
+.educations img{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+}
+
+.educations .mines{
+    position: relative;
+    margin-top: 20px;
+}
+
+.educations .mines h3{
+    float: right;
+    margin-right: 20px;
+}
+
+.educations .mines p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    
+}
+
+.educations .adelaide{
+    position: relative;
+    margin-top: 20px;
+}
+
+.educations .adelaide h3{
+    float: left;    
+    margin-left: 20px;
+}
+
+.educations .adelaide img{
+    float: right;
+    /* display: block; */
+}
+
+.educations .adelaide p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+/*------------------------------------------- */
+/* EXPERIENCE */
+/*------------------------------------------- */
+
+/*------------------------------------------- */
+/* STACKS */
+/*------------------------------------------- */
+
+.stack-section{
+    margin-top: 20px;
+}
+
+.stack-section h2{
+    text-align: center;
+}
+
+.stack{
+    width: 49%;
+    display: inline-block;    
+    transition: box-shadow 0.2s;
+}
+
+.stack:hover{
+    box-shadow: 4px 4px 4px 4px #d6dfe9;
+}
+
+.stacks{
+    text-align: center;
+}
+
+.stacks a{
+    text-decoration: none;
+    position: relative;
+}
+
+.stacks a:link,
+.stacks a:visited{
+    text-decoration: none;
+    border: none;
+    color: #555;
+    transition: color 0.2s;
+}
+
+.stacks a:hover,
+.stacks a:active{
+    /* position: absolute;
+    transform: translate(0,10px); */
+    color: #07507f;
+}

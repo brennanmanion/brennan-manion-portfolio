@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- My CSS Sheet-->
+    {% load static %}
+    <link type="text/css" rel="stylesheet" href="{% static 'snowboarding.css' %}">
+
+    <!-- FontAwesome-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snowboarding</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+
+            <div class="navbar">
+                    <a href="mailto:brennanman007@gmail.com?subject=Brennan Manion Website Portfolio">Contact</a>
+                <a href="../">Home</a>                
+                <div class="dropdown">
+                    <button class="dropbtn">Hobbies 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/trading/">Trading</a>
+                        <a href="/reading/">Reading</a>
+                        <a href="/entrepreneurship/">Entrepreneurship</a>
+                        <a href="/tutorials/">Tutorials</a>
+                        <a href="/weightlifting/">Weightlifting</a>
+                        <a href="/snowboarding/">Snowboarding</a>
+                        <a href="/music/">Music</a>
+                        <a href="/longboarding/">Longboarding</a>
+                    </div>
+                </div>                 
+            </div>
+
+        </nav>
+        <div class="hero-image">
+            <span class="hero-header1">Snowboarding</span>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="left-side">   
+
+            <a href="/trading/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-trading.jpg' %}" alt="hobbies - trading">
+                        <span>Trading</span>
+                    </figure>
+                </div> 
+            </a>
+
+            <a href="/reading/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-reading.jpg' %}" alt="hobbies - reading">
+                        <span>Reading</span>
+                    </figure>
+                </div> 
+            </a>
+
+            <a href="/entrepreneurship/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-entrepreneur.jpg' %}" alt="hobbies - entrepreneur">
+                        <span>Entrepreneurship</span>
+                    </figure>
+                </div>  
+            </a>
+            
+
+            <a href="/tutorials/">
+                <div class="hobby">
+                        <figure class="hobby-photo">
+                            <img src="{% static 'hobby-tutorials.jpg' %}" alt="hobbies - tutorials">
+                            <span>Tutorials</span>
+                        </figure>
+                </div>  
+            </a>  
+
+        </div>
+
+        <div class="middle">
+            <section class="paragraph-writing">
+                <p>
+                        Snowboarding is the ultimate form of recreation. I skied my entire life, and took up snowboarding 3 years ago. Now I can shred double black diamonds down Vail mountain. Snowboarding gives me a thrill, it exposes me to people from all over the world, and gives me an escape from a busy lifestyle. 
+                        <br/><br/>
+                        Carving down a mountain rocking heel to toe on a snowboard is an exhilarating experience. All terrain on the mountain is enjoyable to me on my snowboard. I take jumps in the terrain park, I carve down moguls, and bomb down groomed runs. I love the feeling of gliding across the mountain on fresh powder. The feeling of riding a snowboard is very unique and fills me with bliss. 
+                        <br/><br/>
+                        Snowboarding is great, and the social aspect of the mountain makes it even better. Most people at a ski resort are on vacation, so most people are friendly and open to conversation. When riding the mountain, you will inevitably be paired with people on the ski lift that you do not know. This has been the most seamless socializing experience, and it has introduced me to neighborhood friends in a place far from home. 
+                        <br/><br/>
+                        I am fortunate enough to stay in the mountain resort when I snowboard. Residing in the mountains gives me an escape from the busy world I live in. Being able to retreat to an environment with clean air and beautiful scenery is therapeutic. Experiencing to the mountains is just as delightful as shredding down them. 
+                        <br/><br/>
+                        Snowboarding is a new hobby but one of my favorites. I have recruited a few other friends to learn with me. They now frequent trips to Vail and stay with me. I continue to make new friends on the mountain who convene with me as well. Snowboarding gives me a great break from reality and continues to bring me amusement.                     
+                </p>
+            </section>               
+        </div>
+
+        <div class="right-side">
+
+            <a href="/weightlifting/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-weightlifting.jpg' %}" alt="hobbies - weightlifting">
+                        <span>Weightlifting</span>
+                    </figure>
+                </div> 
+            </a>
+    
+            <a href="/snowboarding/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-snowboarding.jpg' %}" alt="hobbies - snowboarding">
+                        <span>Snowboarding</span>
+                    </figure>
+                </div> 
+            </a>
+    
+            <a href="/music/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-edm.jpg' %}" alt="hobbies - EDM">
+                        <span>Music</span>
+                    </figure>
+                </div>  
+            </a>
+                
+    
+            <a href="/longboarding/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-longboarding.jpg' %}" alt="hobbies - longboarding">
+                        <span>Longboarding</span>
+                    </figure>
+                </div>  
+            </a> 
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

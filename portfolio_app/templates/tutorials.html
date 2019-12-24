@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- My CSS Sheet-->
+    {% load static %}
+    <link type="text/css" rel="stylesheet" href="{% static 'tutorials.css' %}">
+
+    <!-- FontAwesome-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tutorials</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+
+            <div class="navbar">
+                    <a href="mailto:brennanman007@gmail.com?subject=Brennan Manion Website Portfolio">Contact</a>
+                <a href="../">Home</a>                
+                <div class="dropdown">
+                    <button class="dropbtn">Hobbies 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/trading/">Trading</a>
+                        <a href="/reading/">Reading</a>
+                        <a href="/entrepreneurship/">Entrepreneurship</a>
+                        <a href="/tutorials/">Tutorials</a>
+                        <a href="/weightlifting/">Weightlifting</a>
+                        <a href="/snowboarding/">Snowboarding</a>
+                        <a href="/music/">Music</a>
+                        <a href="/longboarding/">Longboarding</a>
+                    </div>
+                </div>                 
+            </div>
+
+        </nav>
+        <div class="hero-image">
+            <span class="hero-header1">Tutorials</span>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="left-side">   
+
+            <a href="/trading/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-trading.jpg' %}" alt="hobbies - trading">
+                        <span>Trading</span>
+                    </figure>
+                </div> 
+            </a>
+
+            <a href="/reading/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-reading.jpg' %}" alt="hobbies - reading">
+                        <span>Reading</span>
+                    </figure>
+                </div> 
+            </a>
+
+            <a href="/entrepreneurship/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-entrepreneur.jpg' %}" alt="hobbies - entrepreneur">
+                        <span>Entrepreneurship</span>
+                    </figure>
+                </div>  
+            </a>
+            
+
+            <a href="/tutorials/">
+                <div class="hobby">
+                        <figure class="hobby-photo">
+                            <img src="{% static 'hobby-tutorials.jpg' %}" alt="hobbies - tutorials">
+                            <span>Tutorials</span>
+                        </figure>
+                </div>  
+            </a>  
+
+        </div>
+
+        <div class="middle">
+            <section class="paragraph-writing">
+                <p>
+                        I spend most of my free time on Udemy learning new skills. Udemy is a platform that hosts paid courses. Anyone can publish a course on Udemy. Industry leaders teach the best courses on Udemy, and their courses have tens of thousands of positive reviews and hundreds of thousands of enrolled students. My favorite topics to learn are programming, finance, and real estate. 
+                        <br/><br/>
+                        I have taken courses on Udemy that cover web frameworks like Django and React, database knowledge like SQL, MySQL, postrgresSQL artificial intelligence with deep learning and machine learning, and data structures & algorithms courses for Python and JavaScript. Each of these individually taught me new skills, but in combination they allow me to program beautiful full stack applications with confidence and simplicity. In addition, my programming knowledge has translated into other fields, like finance. 
+                        <br/><br/>
+                        My programming knowledge has translated into financial knowledge by giving me an edge in knowing how to program market indicators. I have bought tutorials that educated me on financial modeling, algorithm trading, and market indicators. I have learned how to program many different indicators in Python, including RSI, MACD, Ichimoku Cloud, Simple Moving Average, Exponential Moving Average, VWAP, and Bollinger Bands. I learned how to use the Quantopian platform and how to calculate volatility, correlation, and the sharpe ratio in python. You can find a link to my Sharpe Ratio project using React, Django, and Heroku <here>. Financial tutorials have also taught me how to model a company’s cash flow statement to predict their earnings, how to create a portfolio of stocks that are beta neutral, and how to find SEC filings to reveal new information about a company. 
+                        <br/><br/>
+                        Real estate is a passionate field to me because real estate produces more millionaires than any other financial vehicle. Through online tutorials, I have learned about probate real estate and how to find off market deals. Real estate investing is the most lucrative when you buy and hold real estate that is bought under market value, is held for a long period of time and appreciates with time, and is renovated to increase the equity in the home. Finding a property that is below market value is critical to properly investing in real estate and can be done through probate real estate. I have learned through online tutorials how to find probate real estate deals, how to properly contact the family involved, and how to negotiate a fair deal. As of December 23rd, 2019, I am a homeowner, and I plan on using the equity built up from my mortgage as a home equity line of credit to put a down payment on a probate real estate to begin building my real estate portfolio.
+                        <br/><br/>
+                        I love learning. Learning is much more enjoyable when it is your own effort and is not accompanied by anxiety and frustration from homework and exams. Learning directly under a mentor is the most efficient way to learn. Doing so has allowed me to rapidly acquire skills that would take years in a traditional learning environment. Tutorials are my favorite way to spend free time, and all of the skills I learn translate into other disciplines of knowledge.                     
+                </p>
+            </section>               
+        </div>
+
+        <div class="right-side">
+
+            <a href="/weightlifting/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-weightlifting.jpg' %}" alt="hobbies - weightlifting">
+                        <span>Weightlifting</span>
+                    </figure>
+                </div> 
+            </a>
+    
+            <a href="/snowboarding/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-snowboarding.jpg' %}" alt="hobbies - snowboarding">
+                        <span>Snowboarding</span>
+                    </figure>
+                </div> 
+            </a>
+    
+            <a href="/music/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-edm.jpg' %}" alt="hobbies - EDM">
+                        <span>Music</span>
+                    </figure>
+                </div>  
+            </a>
+                
+    
+            <a href="/longboarding/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-longboarding.jpg' %}" alt="hobbies - longboarding">
+                        <span>Longboarding</span>
+                    </figure>
+                </div>  
+            </a> 
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

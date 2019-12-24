@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- My CSS Sheet-->
+    {% load static %}
+    <link type="text/css" rel="stylesheet" href="{% static 'weightlifting.css' %}">
+
+    <!-- FontAwesome-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weightlifting</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+
+            <div class="navbar">
+                    <a href="mailto:brennanman007@gmail.com?subject=Brennan Manion Website Portfolio">Contact</a>
+                <a href="../">Home</a>                
+                <div class="dropdown">
+                    <button class="dropbtn">Hobbies 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/trading/">Trading</a>
+                        <a href="/reading/">Reading</a>
+                        <a href="/entrepreneurship/">Entrepreneurship</a>
+                        <a href="/tutorials/">Tutorials</a>
+                        <a href="/weightlifting/">Weightlifting</a>
+                        <a href="/snowboarding/">Snowboarding</a>
+                        <a href="/music/">Music</a>
+                        <a href="/longboarding/">Longboarding</a>
+                    </div>
+                </div>                 
+            </div>
+
+        </nav>
+        <div class="hero-image">
+            <span class="hero-header1">Weightlifting</span>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="left-side">   
+
+            <a href="/trading/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-trading.jpg' %}" alt="hobbies - trading">
+                        <span>Trading</span>
+                    </figure>
+                </div> 
+            </a>
+
+            <a href="/reading/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-reading.jpg' %}" alt="hobbies - reading">
+                        <span>Reading</span>
+                    </figure>
+                </div> 
+            </a>
+
+            <a href="/entrepreneurship/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-entrepreneur.jpg' %}" alt="hobbies - entrepreneur">
+                        <span>Entrepreneurship</span>
+                    </figure>
+                </div>  
+            </a>
+            
+
+            <a href="/tutorials/">
+                <div class="hobby">
+                        <figure class="hobby-photo">
+                            <img src="{% static 'hobby-tutorials.jpg' %}" alt="hobbies - tutorials">
+                            <span>Tutorials</span>
+                        </figure>
+                </div>  
+            </a>  
+
+        </div>
+
+        <div class="middle">
+            <section class="paragraph-writing">
+                <p>
+                        Weightlifting has been a passion of mine since I was a teenager. I would spend time after practice lifting weights for pleasure. When I got to college, I took weight lifting much more seriously. Weight lifting has given me a social atmosphere as well as a vehicle to benefit my physical and mental health.
+                        <br/><br/>
+                        When I was in high school I was a runner. I competed in track and field as well as cross country. I went to state twice as a 4x800 relay competitor in track and field. Running was a very discomforting pain, and when I began lifting weights, I found a unique, gratifying pain. I am a masochist when it comes to weight lifting. The feeling of being sore and having torn my muscles gives me great pleasure. The endorphins produced from an intense workout are addicting. Most importantly, lifting weights acts as a stress relief for me. Pumping iron reduces my frustration that builds up during the day. Lifting weights not only improved my strength and physique but greatly reduced frustration while improving my mood. 
+                        <br/><br/>
+                        The gym is a judgment free zone. This kind of environment fosters strong relationships. When people can act themselves, free of judgment, more powerful bonds can form. I have developed many long lasting relationships from individuals I have met from the gym, as well as reinforced existing relationships by spending more time together in this intimate environment. Lifting weights in a gym is a social activity that I cherish and dedicate time towards each day. 
+                        <br/><br/>
+                        I have spent six years mastering the ability to tear and repair my muscles. In doing so, I have a better physique, improved mood, and more friends. I am thankful for having dedicated so much time towards lifting weights and being addicted to the gym. I think my future self will concur.                     
+                </p>
+            </section>               
+        </div>
+
+        <div class="right-side">
+
+            <a href="/weightlifting/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-weightlifting.jpg' %}" alt="hobbies - weightlifting">
+                        <span>Weightlifting</span>
+                    </figure>
+                </div> 
+            </a>
+    
+            <a href="/snowboarding/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-snowboarding.jpg' %}" alt="hobbies - snowboarding">
+                        <span>Snowboarding</span>
+                    </figure>
+                </div> 
+            </a>
+    
+            <a href="/music/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-edm.jpg' %}" alt="hobbies - EDM">
+                        <span>Music</span>
+                    </figure>
+                </div>  
+            </a>
+                
+    
+            <a href="/longboarding/">
+                <div class="hobby">
+                    <figure class="hobby-photo">
+                        <img src="{% static 'hobby-longboarding.jpg' %}" alt="hobbies - longboarding">
+                        <span>Longboarding</span>
+                    </figure>
+                </div>  
+            </a> 
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

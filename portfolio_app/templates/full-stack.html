@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- My CSS Sheet-->
+    {% load static %}
+    <link type="text/css" rel="stylesheet" href="{% static 'full-stack.css' %}">
+
+    <!-- FontAwesome-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Full Stack</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+
+            <div class="navbar">
+                    <a href="mailto:brennanman007@gmail.com?subject=Brennan Manion Website Portfolio">Contact</a>
+                <a href="../">Home</a>                
+                <div class="dropdown">
+                    <button class="dropbtn">Skills 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/data-science/">Data Science</a>
+                        <a href="/full-stack/">Full Stack</a>
+                        <a href="/automation/">Automation</a>
+                    </div>
+                </div>                 
+            </div>
+        </nav>
+        <div class="hero-image">
+            <span class="hero-header1">Full Stack</span>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="left-side">   
+
+            <a href="/data-science/">
+                <div class="skill">
+                    <ion-icon name="analytics"></ion-icon>
+                    <h3>Data Science</h3>                                    
+                    <p>Deep Learning &amp; Machine Learning</p>
+                </div> 
+            </a>
+
+            <a href="/full-stack/">
+                <div class="skill">
+                    <ion-icon name="code"></ion-icon>
+                    <h3>Full Stack</h3>                                    
+                    <p>Python, JavaScript, HTML5 &amp; CSS3</p>
+                </div> 
+            </a>
+
+            <a href="/automation/">
+                <div class="skill">
+                    <i class="fas fa-robot"></i>
+                    <h3>Automation</h3>                
+                    <p>Analytics, Reporting &amp; Monitoring</p>
+                </div>  
+            </a>
+            
+        </div>
+        <div class="right-side">
+            <section class="paragraph-writing">
+                <p>
+                        I have professional business experience creating a full stack web application for a digital advertising agency. The application hosted each client’s data from multiple data sources in one space. The client was able to compare data from multiple sources to make business decisions. Server to server calls were scheduled and data was stored, a front end user interface was developed to post information to the backend and render the returned data on the frontend, and backend functionality was created to collect information from the database and return relevant information. 
+                        <br/><br/>
+                        The project was built with a Python backend and a frontend consisting of JavaScript, HTML, and CSS. Django was used for the web framework. Server to server API calls were scheduled to store data from one source to the local database. This included data from both digital and social platforms. Sources included Shopify, Adroll, Google, Facebook, Instagram, Pinterest, Linkedin, ConstantContact, Mailchimp and iContact. Each of these platforms provided massive amounts of analytical data, which could be viewed on a single window to analyze every perspective of a client’s growth.  
+                        <br/><br/>
+                        The frontend of the web application was built to show a client how their brand is evolving through the different platforms they marketed on. The front end user interface was split into two sections; one that allowed them to view paid advertising data and another for organic data. From each of these sections, the user could then specify a metric (post engagement, link clicks, shares, etc), and breakdown of that data (age, gender, region, device platform, hour) to be plotted on an assortment of chart types with a specified date range, with the ability to aggregate data for larger periods (weekly & monthly data compared to daily data). Plots were rendered on the DOM and were draggable and resizable. Users could then create and save templates of different plots on the DOM that they could open later. This was incredibly revolutionary for a client because traditionally, they would be looking at static data for specific metrics over a specific period. Now clients could compare data from multiple sources on the same platform and could seamlessly change the time period and metrics.
+                        <br/><br/>
+                        The backend received post data from the user interface to provide the desired information requested on the frontend. The backend dealt with acquiring, formatting, and sending data from the database, aggregating data from the database, and performing calculations that should not be done on the frontend. Post data received from the backend identified which client was logged in, what information they were requesting, and what time period to report. The appropriate fields from the database are collected, data is aggregated and organized, and the correctly formatted data is returned to the frontend. 
+                        <br/><br/>
+                        This full stack application allowed client’s to easily compare different sources of data against each other. This gave them insight as to what is driving traffic, what marketing strategies are working, and where to best distribute their budget. Client’s could make custom templates and easily change the reporting period and metric they wish to view. The project added significant value to the agency and gave them an edge in analytics reporting to win more clients.                     
+                </p>
+            </section>               
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

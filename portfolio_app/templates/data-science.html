@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- My CSS Sheet-->
+    {% load static %}
+    <link type="text/css" rel="stylesheet" href="{% static 'data-science.css' %}">
+
+    <!-- FontAwesome-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data Science</title>
+</head>
+<body>
+    <header>
+        <nav class="data-science-navigation">
+
+            <div class="navbar">
+                    <a href="mailto:brennanman007@gmail.com?subject=Brennan Manion Website Portfolio">Contact</a>
+                <a href="../">Home</a>                
+                <div class="dropdown">
+                    <button class="dropbtn">Skills 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/data-science/">Data Science</a>
+                        <a href="/full-stack/">Full Stack</a>
+                        <a href="/automation/">Automation</a>
+                    </div>
+                </div>                 
+            </div>
+        </nav>
+        <div class="hero-image">
+            <span class="hero-header1">Data Science</span>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="left-side">   
+
+            <a href="/data-science/">
+                <div class="skill">
+                    <ion-icon name="analytics"></ion-icon>
+                    <h3>Data Science</h3>                                    
+                    <p>Deep Learning &amp; Machine Learning</p>
+                </div> 
+            </a>
+
+            <a href="/full-stack/">
+                <div class="skill">
+                    <ion-icon name="code"></ion-icon>
+                    <h3>Full Stack</h3>                                    
+                    <p>Python, JavaScript, HTML5 &amp; CSS3</p>
+                </div> 
+            </a>
+
+            <a href="/automation/">
+                <div class="skill">
+                    <i class="fas fa-robot"></i>
+                    <h3>Automation</h3>                
+                    <p>Analytics, Reporting &amp; Monitoring</p>
+                </div>  
+            </a>
+            
+        </div>
+        <div class="right-side">
+            <section class="paragraph-writing">
+                <p>
+                        I have experience building artificial intelligence to solve business problems and automate tasks that traditionally require human input. The first project was to classify comments posted on a client’s social media page. The second project was to predict the best time to post on social media. The third was to classify market segments. In each project I received exposure to the sklearn, numpy, pandas and scipy libraries to analyze large amounts of data to make inferences and build solutions.  
+                        <br/><br/>
+                        My first machine learning project was to predict if a comment posted on a client’s social media was negative or positive. Historical data was collected on comments posted on each client’s page programmatically. Comments were then cleaned for typos, spelling errors, and relevancy. Comments were assigned a value of 0 for positive and 1 for negative. The Python natural language tool kit was used to add more quantitative information, including polarity and sentiment. The sentences were then modeled after these features to predict if the comment was positive or negative. 
+                        <br/><br/>
+                        The second business problem I solved with machine learning was to predict when the most number of users would be online, so that a post would be published at the optimal time. Historical data for the number of users online is available for a business page through the Facebook API.  Historical data was collected for every hour of the day for every day of the year for 2 years. The data was first analyzed in Excel and a sixth order polynomial function fit the data with accuracy. Taking the derivative of this function and solving for the critical points revealed at what point in time the most number of users were online. The day of the week, the week of the year, and the critical point were the features used to predict the time of day the most users would be online. Posts were then scheduled according to the times predicted. 
+                        <br/><br/>
+                        A classification project was built for a client that is a fortune 500 company who needed to understand their audience. The client had data on sales from their Shopify store dating back 2 years. The data was cleaned and features including their province/state, product category, and gender were used for classification. Hierarchical classification was used to qualitatively describe how similar different clusters of customers were to one another. These audience segments were then used for surveying. A single survey for one member of the cluster was used to represent the entire cluster, and marketing inferences were made from all available data. 
+                        <br/><br/>
+                        Machine learning was used to classify and predict data. Cleaning and analyzing the data was a necessary step in each project. Framing the question and choosing the correct regressor or classifier for a problem demanded careful analysis of the situation and the data available. With machine learning, I was able to solve business problems and automate tasks that normally would require human attention.                     
+                </p>
+            </section>               
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
